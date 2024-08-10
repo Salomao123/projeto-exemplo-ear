@@ -1,0 +1,5 @@
+package web.rest.services;
+
+public class UserServices {
+
+}

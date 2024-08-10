@@ -1,0 +1,5 @@
+package web.rest.domain.entities;
+
+public class User {
+
+}

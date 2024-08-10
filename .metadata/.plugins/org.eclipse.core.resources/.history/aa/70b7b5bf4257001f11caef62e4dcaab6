@@ -1,0 +1,27 @@
+package web.rest.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.ResponseBuilder;
+
+import web.rest.domain.entities.User;
+
+@Path("/users")
+public class UserServices {
+
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public ResponseBuilder getUserResponse() {
+
+		List<User> listaUsuario = new ArrayList<>();
+		listaUsuario.add(new User("salomao", "salomao@teste.com"));
+		listaUsuario.add(new User("marta", "marta@teste.com"));
+		return Response.ok(listaUsuario);
+	}
+}

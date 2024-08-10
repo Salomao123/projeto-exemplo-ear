@@ -1,0 +1,5 @@
+package com.web.testproject.controllers;
+
+public class HelloController {
+
+}

@@ -1,0 +1,15 @@
+package com.ejb.statelessbean;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class HelloBean
+ */
+@Stateless(mappedName = "HelloBean")
+@LocalBean
+public class HelloBean implements HelloBeanRemote {
+
+    public HelloBean() { }
+
+}
